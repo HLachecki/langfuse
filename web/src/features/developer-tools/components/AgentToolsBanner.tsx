@@ -25,7 +25,7 @@ export function AgentToolsBanner() {
         </Button>
       )}
     >
-      <div className="flex items-center gap-2">
+      <div className="mb-4 flex items-center gap-2">
         <Bot className="h-4 w-4 shrink-0" />
         <span>
           <span className="font-semibold">

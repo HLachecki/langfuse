@@ -223,7 +223,7 @@ const SingleOrganizationProjectOverviewTile = ({
   }
 
   return (
-    <div key={orgId} className="mb-10">
+    <div key={orgId}>
       <Header
         title={org.name}
         className="truncate"
@@ -310,9 +310,7 @@ export const OrganizationProjectOverview = () => {
         ),
       }}
     >
-      <div className="mb-4">
-        <AgentToolsBanner />
-      </div>
+      <AgentToolsBanner />
       {showOnboarding && <Onboarding />}
       {organizations
         .sort((a, b) => {
